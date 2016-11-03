@@ -113,9 +113,13 @@ The nextcloud desktop client dolphin extension.
 %setup -T -D -a 1 -n client_theming-%{version}
 rm -Rf client
 mv owncloudclient-%{version} client
+cd client
 %patch0 -p1
+cd -
 %patch1 -p1
-%patch1 -p2
+cd client
+%patch2 -p1
+cd -
 rm -rf src/3rdparty/qtlockedfile src/3rdparty/qtsingleapplication
 
 
