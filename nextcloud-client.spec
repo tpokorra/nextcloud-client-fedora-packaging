@@ -176,7 +176,7 @@ fi
 %{_libdir}/libnextcloudsync.so.%{version}
 %{_libdir}/nextcloud/libocsync.so.*
 %doc README.md
-%license COPYING
+%license client/COPYING
 %config %{_sysconfdir}/Nextcloud/sync-exclude.lst
 %dir %{_sysconfdir}/Nextcloud
 
